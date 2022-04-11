@@ -15,7 +15,7 @@ def create_json(_current_dir):
 def write_info(*args):
     group_id = args[0]
     user_id = args[1]
-    _current_dir = os.path.join(os.path.dirname(__file__), f'data\{group_id}.json')
+    _current_dir = os.path.join(os.path.dirname(__file__), f'data/{group_id}.json')
     config = create_json(_current_dir)
     data = {
         "actions": args[2],
