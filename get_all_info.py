@@ -37,7 +37,7 @@ def get_msg(group_id, user_id):
     return msg
 
 def judge(group_id, user_id):
-    current_dir = os.path.join(os.path.dirname(__file__), f'data\{group_id}.json')
+    current_dir = os.path.join(os.path.dirname(__file__), f'data/{group_id}.json')
     if os.path.exists(current_dir):
         file = open(current_dir, 'r', encoding = 'UTF-8')
         config = json.load(file)
